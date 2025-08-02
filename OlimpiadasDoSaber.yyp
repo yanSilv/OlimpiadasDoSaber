@@ -35,9 +35,13 @@
   },
   "name":"OlimpiadasDoSaber",
   "resources":[
+    {"id":{"name":"fnt_perguntas","path":"fonts/fnt_perguntas/fnt_perguntas.yy",},},
+    {"id":{"name":"perguntasTitulo","path":"fonts/perguntasTitulo/perguntasTitulo.yy",},},
     {"id":{"name":"obj_apresentacao","path":"objects/obj_apresentacao/obj_apresentacao.yy",},},
+    {"id":{"name":"obj_creditos_controller","path":"objects/obj_creditos_controller/obj_creditos_controller.yy",},},
     {"id":{"name":"obj_inicial_controlador","path":"objects/obj_inicial_controlador/obj_inicial_controlador.yy",},},
     {"id":{"name":"obj_nivel_controlador","path":"objects/obj_nivel_controlador/obj_nivel_controlador.yy",},},
+    {"id":{"name":"obj_perguntas_controller","path":"objects/obj_perguntas_controller/obj_perguntas_controller.yy",},},
     {"id":{"name":"obj_tutorial_controlador","path":"objects/obj_tutorial_controlador/obj_tutorial_controlador.yy",},},
     {"id":{"name":"room_apresentacao","path":"rooms/room_apresentacao/room_apresentacao.yy",},},
     {"id":{"name":"room_creditos","path":"rooms/room_creditos/room_creditos.yy",},},
