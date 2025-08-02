@@ -7,5 +7,7 @@ pergunta_atual = 0;
 
 erros = 0;
 
+mostrar_feedback = false;
+
 // Buscar perguntas do servidor
 http_get(server_url);
