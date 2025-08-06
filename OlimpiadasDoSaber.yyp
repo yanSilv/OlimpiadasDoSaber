@@ -61,6 +61,7 @@
     {"id":{"name":"spr_nivel","path":"sprites/spr_nivel/spr_nivel.yy",},},
     {"id":{"name":"spr_perguntas","path":"sprites/spr_perguntas/spr_perguntas.yy",},},
     {"id":{"name":"spr_tutorial","path":"sprites/spr_tutorial/spr_tutorial.yy",},},
+    {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
