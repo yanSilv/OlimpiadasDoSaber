@@ -6,11 +6,11 @@ with (obj_erro) {
 
 pergunta_atual += 1;
 
-if (pergunta_atual >= ds_list_size(perguntas)) {
+if (pergunta_atual >= ds_list_size(perguntas) || (erros >= qtd_erros) || (count_perguntas >= qtd_perguntas)) {
     show_debug_message("Fim das perguntas!");
 	
-	var total = ds_list_size(perguntas);
-	var acertos_valor = total - erros;
+	var total = acertos + erros;
+	var acertos_valor = acertos;
 	var erros_valor = erros;
 	
 	visible = false;

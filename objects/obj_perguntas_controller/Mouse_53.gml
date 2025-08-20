@@ -1,10 +1,25 @@
+var mx = device_mouse_x(0);
+var my = device_mouse_y(0);
+var resposta = "";
+
+show_debug_message("Resposta correta!");
+	
+if (mx > 55 && mx < 540){
+	if (my > 550 && my < 600) {
+		resposta = "A"
+	} else if (my > 610 && my < 660) {
+		resposta = "B";
+	}	
+} else if (mx > 740 && mx < 1225) {
+	if (my > 550 && my < 600) {
+		resposta = "C";
+	} else if (my > 610 && my < 660) {
+		resposta = "D";
+	}
+}
+
 if (ds_list_size(perguntas) > 0) {
     var q = perguntas[| pergunta_atual];
-    var resposta = "";
-    if (keyboard_check_pressed(ord("A"))) resposta = "A";//q.opcaoA;
-    if (keyboard_check_pressed(ord("B"))) resposta = "B";//q.opcaoB;
-    if (keyboard_check_pressed(ord("C"))) resposta = "C";//q.opcaoC;
-	if (keyboard_check_pressed(ord("D"))) resposta = "D";//q.opcaoD;
 
     if (resposta != "" && count_perguntas < qtd_perguntas) {
         if (resposta == q.resCorreta) {

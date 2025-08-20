@@ -314,6 +314,8 @@
   },
   "pointRounding":0,
   "ranges":[
+    {"lower":10,"upper":10,},
+    {"lower":13,"upper":13,},
     {"lower":32,"upper":255,},
     {"lower":9647,"upper":9647,},
   ],
@@ -324,10 +326,7 @@
   "sdfSpread":8,
   "size":16.0,
   "styleName":"Regular",
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
+  "textureGroupId":null,
   "TTFName":"",
   "usesSDF":false,
 }

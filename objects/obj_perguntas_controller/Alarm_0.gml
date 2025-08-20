@@ -7,11 +7,14 @@ with (obj_acerto) {
 
 pergunta_atual += 1;
 
-if (pergunta_atual >= ds_list_size(perguntas)) {
+show_debug_message(count_perguntas);
+show_debug_message(qtd_perguntas);
+
+if (pergunta_atual >= ds_list_size(perguntas) || (count_perguntas >= qtd_perguntas)) {
    show_debug_message("Fim das perguntas!");
 	
-	var total = ds_list_size(perguntas);
-	var acertos_valor = total - erros;
+	var total = acertos + erros;
+	var acertos_valor = acertos;
 	var erros_valor = erros;
 	
 	visible = false;
