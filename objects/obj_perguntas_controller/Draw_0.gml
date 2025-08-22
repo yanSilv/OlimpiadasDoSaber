@@ -11,13 +11,16 @@ var posi_respo_colD = 628;
 if (ds_list_size(perguntas) > 0) {
 	draw_self();
     var q = perguntas[| pergunta_atual];
+	draw_set_color(c_black);
 	draw_text(156, 72, "Pergunta " + string(pergunta_atual + 1));
+	
 	draw_set_font(perguntasTitulo);
 	draw_set_color(c_white);
 	draw_text_ext(xx+5, yy+5, q.pergunta, altura_linha, largura_max);
     
 	draw_set_font(fnt_perguntas);
-	draw_set_color(make_color_rgb(91, 140, 153));
+	//draw_set_color(make_color_rgb(91, 140, 153));
+	draw_set_color(c_black);
 	
 	if (string_width(q.opcaoA) > 550) {
 		posi_respo_colA -= 10;

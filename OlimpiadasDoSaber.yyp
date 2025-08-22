@@ -36,6 +36,7 @@
   "name":"OlimpiadasDoSaber",
   "resources":[
     {"id":{"name":"fnt_perguntas","path":"fonts/fnt_perguntas/fnt_perguntas.yy",},},
+    {"id":{"name":"fnt_tutorial","path":"fonts/fnt_tutorial/fnt_tutorial.yy",},},
     {"id":{"name":"perguntasTitulo","path":"fonts/perguntasTitulo/perguntasTitulo.yy",},},
     {"id":{"name":"obj_acerto","path":"objects/obj_acerto/obj_acerto.yy",},},
     {"id":{"name":"obj_apresentacao","path":"objects/obj_apresentacao/obj_apresentacao.yy",},},
@@ -56,6 +57,7 @@
     {"id":{"name":"spr_apresentacao","path":"sprites/spr_apresentacao/spr_apresentacao.yy",},},
     {"id":{"name":"spr_creditos","path":"sprites/spr_creditos/spr_creditos.yy",},},
     {"id":{"name":"spr_erro","path":"sprites/spr_erro/spr_erro.yy",},},
+    {"id":{"name":"spr_exemplo_tutorial","path":"sprites/spr_exemplo_tutorial/spr_exemplo_tutorial.yy",},},
     {"id":{"name":"spr_final","path":"sprites/spr_final/spr_final.yy",},},
     {"id":{"name":"spr_incial","path":"sprites/spr_incial/spr_incial.yy",},},
     {"id":{"name":"spr_nivel","path":"sprites/spr_nivel/spr_nivel.yy",},},

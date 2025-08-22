@@ -1,7 +1,7 @@
 // URL do seu servidor
 server_url = "http://localhost:3000/perguntas";
 qtd_erros = 3;
-qtd_perguntas = 20;
+qtd_perguntas = 5;
 qtd_faceis = 0;
 qtd_dificeis = 0;
 
