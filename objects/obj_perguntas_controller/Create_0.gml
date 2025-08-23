@@ -25,3 +25,6 @@ layer_set_visible("Instances_final", false);
 
 yIni = 547;
 yFin = 600;
+
+audio_play_sound(sou_theme_game, 1, true);
+mouse_over = true;

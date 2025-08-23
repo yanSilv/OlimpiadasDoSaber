@@ -1,9 +1,6 @@
 yIni = 547;
 yFin = 603;
-//Iniciante = 0
-//Iniciante = 0
-//Iniciante = 0
-//Iniciante = 0
+
 enum NiveisJovo {
 	INICIANTE,
 	MEDIANO,
@@ -13,3 +10,6 @@ enum NiveisJovo {
 
 global.nivel = 0;
 flagSelecao = false;
+
+audio_play_sound(sou_theme_menu, 1, true);
+mouse_over = true;

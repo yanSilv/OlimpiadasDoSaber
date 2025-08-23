@@ -3,5 +3,6 @@ var my = device_mouse_y(0);
 
 // Iniciar
 if (mx > 23 && mx < 96 && my > 624 && my < 710 && layer_get_visible("Instances_final")) {
-    room_goto(room_inicial); // Muda para room que apresenta os niveis
+	audio_stop_sound(sou_theme_game);
+    room_goto(room_inicial); 
 }

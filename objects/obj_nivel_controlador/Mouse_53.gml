@@ -5,6 +5,7 @@ var my = device_mouse_y(0);
 show_debug_message("Pressionou "+ string(mx)+ " "+string(my));
 // Iniciar
 if (mx > 23 && mx < 96 && my > 624 && my < 710) {
+	audio_stop_sound(sou_theme_menu);
     room_goto(room_inicial); // Muda para room da tela INICIAL
 }
 
@@ -29,5 +30,6 @@ if (mx > 932 && mx < 1194 && my > yIni && my < yFin) {
 }
 
 if (flagSelecao) {
+	audio_stop_sound(sou_theme_menu);
 	room_goto(room_perguntas);
 }
