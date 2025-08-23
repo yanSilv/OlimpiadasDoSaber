@@ -1,16 +1,19 @@
 var xx = 100;
 var yy = 220;
+
 var largura_max = 1100;
 var altura_linha = 50;
 
-var posi_respo_colA = 560;
-var posi_respo_colB = 628;
-var posi_respo_colC = 560;
-var posi_respo_colD = 628;
+var posicoes_y = [560, 628, 560, 628];
+var posicoes_x = [127, 127, 811, 811];
+
 
 if (ds_list_size(perguntas) > 0) {
 	draw_self();
     var q = perguntas[| pergunta_atual];
+	
+	var opcoes = [q.opcaoA, q.opcaoB, q.opcaoC, q.opcaoD];
+	
 	draw_set_color(c_black);
 	draw_text(156, 72, "Pergunta " + string(pergunta_atual + 1));
 	
@@ -19,26 +22,16 @@ if (ds_list_size(perguntas) > 0) {
 	draw_text_ext(xx+5, yy+5, q.pergunta, altura_linha, largura_max);
     
 	draw_set_font(fnt_perguntas);
-	//draw_set_color(make_color_rgb(91, 140, 153));
 	draw_set_color(c_black);
 	
-	if (string_width(q.opcaoA) > 550) {
-		posi_respo_colA -= 10;
-	}
-	if (string_width(q.opcaoB) > 550) {
-		posi_respo_colB -= 10;
-	}
-	if (string_width(q.opcaoC) > 550) {
-		posi_respo_colC -= 10;
-	}
-	if (string_width(q.opcaoD) > 550) {
-		posi_respo_colD -= 10;
-	}
-	
-	draw_text_ext(127, posi_respo_colA, q.opcaoA, 20, 400);
-	draw_text_ext(127, posi_respo_colB, q.opcaoB, 20, 400);
-	draw_text_ext(811, posi_respo_colC, q.opcaoC, 20, 400);
-	draw_text_ext(811, posi_respo_colD, q.opcaoD, 20, 400);
+	// Desenha as opções
+    for (var i = 0; i < 4; i++) {
+        var pos_y = posicoes_y[i];
+        if (string_width(opcoes[i]) > 550) {
+            pos_y -= 10;
+        }
+        draw_text_ext(posicoes_x[i], pos_y, opcoes[i], 20, 400);
+    }
 	
     draw_text(32,   20, "Erros: " + string(erros));
 	
@@ -47,18 +40,14 @@ if (ds_list_size(perguntas) > 0) {
 	var my = device_mouse_y(0);
 	draw_set_color(c_white);
 	
-	if (mx > 55 && mx < 540){
-		if (my > 550 && my < 600) {
-			draw_rectangle(55, yFin, 540, yFin+10, false);
-		} else if (my > 610 && my < 660) {
-			draw_rectangle(55, 665, 540, 665+10, false);
-		}	
-	} else if (mx > 740 && mx < 1225) {
-		if (my > 550 && my < 600) {
-			draw_rectangle(740, yFin, 1225, yFin+10, false);
-		} else if (my > 610 && my < 660) {
-			draw_rectangle(740, 665, 1225, 665+10, false);
-		}
+	if (point_in_rectangle(mx, my, 55, 550, 540, 600)) {
+	    draw_rectangle(55, yFin, 540, yFin + 10, false);
+	} else if (point_in_rectangle(mx, my, 55, 610, 540, 660)) {
+	    draw_rectangle(55, 665, 540, 675, false);
+	} else if (point_in_rectangle(mx, my, 740, 550, 1225, 600)) {
+	    draw_rectangle(740, yFin, 1225, yFin + 10, false);
+	} else if (point_in_rectangle(mx, my, 740, 610, 1225, 660)) {
+	    draw_rectangle(740, 665, 1225, 675, false);
 	}
 	
 }
