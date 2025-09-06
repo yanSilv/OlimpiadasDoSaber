@@ -18,3 +18,8 @@ if (mx > 465 && mx < 700 && my > 641 && my < 691) {
    audio_stop_sound(sou_theme_menu);
    room_goto(room_creditos); // Muda para room de Creditos
 }
+
+// SOM
+if ((mx > 18 && mx < 95) && (my > 620 && my < 710)) {
+	src_controller_som();
+}

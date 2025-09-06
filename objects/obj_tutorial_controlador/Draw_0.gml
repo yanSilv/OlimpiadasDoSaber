@@ -1,5 +1,5 @@
-var mx = device_mouse_x(0);
-var my = device_mouse_y(0);
+//var mx = device_mouse_x(0);
+//var my = device_mouse_y(0);
 
 var largura_max = 1100;
 var altura_linha = 30;
@@ -7,9 +7,9 @@ var altura_linha = 30;
 var xx = 100;
 var yy = 120;
 
-if (my >624 && my < 710 && mx > 23 && mx < 96) {
-	draw_rectangle(23, 710, 96, 720, false);
-}
+//if (my >624 && my < 710 && mx > 23 && mx < 96) {
+//	draw_rectangle(23, 710, 96, 720, false);
+//}
 
 //Necessario inserir o draw_self para exibir animação do objeto na Room
 draw_self();

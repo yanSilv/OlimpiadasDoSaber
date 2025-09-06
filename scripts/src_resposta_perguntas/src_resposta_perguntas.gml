@@ -9,7 +9,7 @@ function src_resposta_perguntas(resposta){
 				audio_play_sound(sou_win, 1, false);
 	            mostrar_feedback = true;
 				obj_acerto.visible = true;
-				instance_create_layer(x, y, "Instances", obj_acerto);
+				//instance_create_layer(x, y, "Instances", obj_acerto);
 				count_perguntas += 1;
 				acertos += 1;
 				alarm[0] = room_speed * 2;		
@@ -19,7 +19,7 @@ function src_resposta_perguntas(resposta){
 				audio_play_sound(sou_error, 1, false);
 				mostrar_feedback = true;
 				obj_erro.visible = true;
-				instance_create_layer(x, y, "Instances", obj_erro);
+				//instance_create_layer(x, y, "Instances", obj_erro);
 				count_perguntas += 1;
 				alarm[1] = room_speed * 2;
 	        }
